@@ -63,6 +63,7 @@ export default function Seo(props: SeoProps) {
       <meta name='twitter:title' content={meta.title} />
       <meta name='twitter:description' content={meta.description} />
       <meta name='twitter:image' content={meta.image} />
+      <meta name='viewport' content='initial-scale=1, width=device-width' />
       {meta.date && (
         <>
           <meta property='article:published_time' content={meta.date} />

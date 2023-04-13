@@ -1,12 +1,26 @@
 import type { Config } from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme';
 
-export default {
+module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      screens: {
+        sm: [
+          {
+            min: '0px',
+            max: '499px',
+          },
+        ],
+        md: [
+          {
+            min: '500px',
+            max: '1024px',
+          },
+        ],
+      },
       fontFamily: {
-        primary: ['Inter', ...defaultTheme.fontFamily.sans],
+        primary: ['Roboto', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: {
