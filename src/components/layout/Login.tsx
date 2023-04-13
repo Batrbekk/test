@@ -35,12 +35,12 @@ export default function Login() {
         <div className='w-full max-w-[550px] pb-4 pt-8'>
           <div className='mb-10 flex flex-col items-center rounded bg-white px-12 pb-9 pt-14 shadow-[0_10px_16px_0_rgba(0,0,0,0.24)]'>
             <p className='pb-7 text-4xl font-bold'>Account Login</p>
-            <div className='mb-12 w-full px-12'>
+            <div className='mb-12 flex w-full flex-col items-center gap-6 px-12'>
               <TextField
                 label='Email'
                 name='email'
                 variant='outlined'
-                className='mb-6 w-full'
+                className='w-full'
               />
               <FormControl
                 sx={{ m: 1, width: '100%', margin: '0' }}
@@ -68,10 +68,7 @@ export default function Login() {
                 />
               </FormControl>
             </div>
-            <Button
-              variant='contained'
-              className='button-play relative mb-5 w-full max-w-[168px] bg-[#FF165E] px-5 py-3.5 hover:bg-[#FF165E]'
-            >
+            <Button variant='contained' className='button-play relative'>
               <p className='mr-3'>Log in</p>
               <Play className='absolute right-4 h-4 w-3.5' />
             </Button>
@@ -81,14 +78,14 @@ export default function Login() {
               <div className='flex w-full items-center justify-center gap-4'>
                 <Button
                   variant='outlined'
-                  className='relative w-full max-w-[160px] rounded-full border-[rgba(0,0,0,0.19)] py-3 font-normal capitalize text-[#4995EF]'
+                  className='social-button relative w-full'
                 >
                   <Google className='absolute left-3.5 h-[18px] w-[18px]' />
                   <p className='ml-3'>Google</p>
                 </Button>
                 <Button
                   variant='outlined'
-                  className='relative w-full max-w-[160px] rounded-full border-[rgba(0,0,0,0.19)] py-3 font-normal capitalize text-[#4995EF]'
+                  className='social-button relative w-full'
                 >
                   <Facebook className='absolute left-3.5 h-[18px] w-[18px]' />
                   <p className='ml-3'>Facebook</p>
